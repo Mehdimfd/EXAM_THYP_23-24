@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix ex: <https://examen.univ-paris8.fr/onto/ex#> .
+@prefix ma: <http://www.w3.org/ns/ma-ont#>.
+
+<https://examen.univ-paris8.fr/onto/ex#> a owl:Ontology ;
+    dcterms:title "JO 2024" .
+
+ex:Athlete a rdfs:Class ;
+    rdfs:label "Athlete" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ex:Competition a rdfs:Class ;
+    rdfs:label "Competition" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+    
+ex:Resultat a rdfs:Class ;
+    rdfs:label "Resultat" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ex:Idathlete a rdf:Property ;
+    rdfs:label "Idathlete" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
+
+ex:hasRecord a rdf:Property ;
+    rdfs:label "hasRecord" ;
+    rdfs:domain o:Resource ;
+    vs:term_status "experimental" .
